@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassSheet</title>
+
+    <!-- boostrap -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="classSheet">
+        <div class="container">
+            <h1 class="text-center pt-3 pb-3">Class Sheet</h1>
+            <div class="mt-3">
+                <label for="name" >Họ tên</label>
+                <input type="text" class="form-control" id="name" placeholder="Nhập Họ và tên">
+            </div>
+            <div class="mt-3">
+                <label for="name">Điểm Toán</label>
+                <input type="number" class="form-control" id="math" placeholder="Nhập điểm Toán">
+            </div>
+            <div class="mt-3">
+                <label for="name">Điểm Lý</label>
+                <input type="number" class="form-control" id="physic" placeholder="Nhập điểm Lý">
+            </div>
+            <div class="mt-3">
+                <label for="name">Điểm Hóa</label>
+                <input type="number" class="form-control" id="chemic" placeholder="Nhập điểm Hóa">
+            </div>
+            <button id="submit" type="button" class="btn btn-outline-success d-flex m-auto mt-3 mb-3" >Nhập</button>
+            <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col" class="text-center" >STT</th>
+                    <th scope="col" class="text-center">Họ tên</th>
+                    <th scope="col" class="text-center">Toán</th>
+                    <th scope="col" class="text-center">Lý</th>
+                    <th scope="col" class="text-center">Hóa</th>
+                    <th scope="col" class="text-center">Trung Bình</th>
+                  </tr>
+                </thead>
+                <tbody id="root">
+                  
+                </tbody>
+            </table>
+            <div class="handle d-flex  mt-5 justify-content-center">
+                <button type="button" class="btn btn-outline-success ms-5 me-5" id="coinMedium">Tính điểm trung bình</button>
+                <button type="button" class="btn btn-outline-success ms-5 me-5">Xác định học sinh giỏi</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- script boostrap -->
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./scrips.js"></script>
+</body>
+</html>
